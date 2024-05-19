@@ -26,13 +26,12 @@ export default function Home() {
   );
 }
 const HomeHeader = styled.header`
-  background: url("/assets/home-pizza.jpg") no-repeat;
-  background-position: center top;
+  background: url("/assets/home-pizza.jpg") no-repeat center center;
   background-size: cover;
-  min-height: 100vh;
+  min-height: 85vh;
   width: 100%;
   color: #ffffff;
-  padding: 5% 5%;
+  padding: 5% 10%;
   display: flex;
   flex-direction: column;
   gap: 153px;
