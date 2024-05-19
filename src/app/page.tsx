@@ -19,8 +19,13 @@ export default function Home() {
 }
 const HomeHeader = styled.header`
   background: url("/assets/home-pizza.jpg") no-repeat;
-  background-position: center center;
+  background-position: center top;
   background-size: cover;
   min-height: 100vh;
   width: 100%;
+  color: #ffffff;
+  padding: 5% 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 153px;
 `;
