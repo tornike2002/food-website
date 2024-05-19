@@ -2,23 +2,27 @@
 import styled from "styled-components";
 import Image from "next/image";
 import Dine from "/public/assets/dine.svg";
+import HomeOne from "@/components/home-sections/home-one";
 export default function Home() {
   return (
-    <HomeHeader>
-      <Image src={Dine} alt="Home logo" />
-      <div className="home-wrapper">
-        <h1>
-          Exquisite dining
-          <br /> since 1989
-        </h1>
-        <p>
-          Experience our seasonal menu in beautiful country
-          <br /> surroundings. Eat the freshest produce from the
-          <br /> comfort of our farmhouse.
-        </p>
-        <button>BOOK A TABLE</button>
-      </div>
-    </HomeHeader>
+    <>
+      <HomeHeader>
+        <Image src={Dine} alt="Home logo" />
+        <div className="home-wrapper">
+          <h1>
+            Exquisite dining
+            <br /> since 1989
+          </h1>
+          <p>
+            Experience our seasonal menu in beautiful country
+            <br /> surroundings. Eat the freshest produce from the
+            <br /> comfort of our farmhouse.
+          </p>
+          <button>BOOK A TABLE</button>
+        </div>
+      </HomeHeader>
+      <HomeOne />
+    </>
   );
 }
 const HomeHeader = styled.header`
