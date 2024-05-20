@@ -2,7 +2,9 @@ import styled from "styled-components";
 import Image from "next/image";
 import divider from "/public/assets/title-line.svg";
 import homeTwo from "/public/assets/home-side2.png";
-import SideMark from "/public/assets/side-mark.png";
+
+import ImageBg from "/public/assets/image-background-reverse.svg";
+
 export default function HomeTwo() {
   return (
     <HomeSectionTwo>
@@ -21,10 +23,11 @@ export default function HomeTwo() {
       <div className="image-container">
         <Image src={homeTwo} alt="home background" />
       </div>
-      <Image src={SideMark} alt="side Mark" />
+      <Image src={ImageBg} alt="Image background" className="image-bg" />
     </HomeSectionTwo>
   );
 }
+
 const HomeSectionTwo = styled.section`
   display: flex;
   margin: 0 6.5%;
@@ -32,10 +35,31 @@ const HomeSectionTwo = styled.section`
   align-items: center;
   justify-content: space-evenly;
   font-family: "League Spartan", sans-serif;
+  position: relative;
+
+  .image-container {
+    position: relative;
+    z-index: 2; /* Ensure it is above the image background */
+  }
+
+
+
+  .image-bg {
+    position: absolute;
+    bottom: 0;
+    right: 3%;
+    z-index: 0; /* Ensure it is behind the other images */
+    width: 50%;
+    height: auto;
+    overflow: hidden;
+  }
+
   .sectionTwo-wrapper {
     display: flex;
     flex-direction: column;
     gap: 27px;
+    z-index: 1; /* Ensure it is above the background but below other elements */
+    
     h1 {
       padding-top: 28px;
       font-weight: 700;
