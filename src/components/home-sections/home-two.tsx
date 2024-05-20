@@ -21,7 +21,7 @@ export default function HomeTwo() {
         </p>
       </div>
       <div className="image-container">
-        <Image src={homeTwo} alt="home background" />
+        <Image src={homeTwo} alt="home background" width={540} height={720}/>
       </div>
       <Image src={ImageBg} alt="Image background" className="image-bg" />
     </HomeSectionTwo>
@@ -39,18 +39,16 @@ const HomeSectionTwo = styled.section`
 
   .image-container {
     position: relative;
-    z-index: 2; /* Ensure it is above the image background */
+    z-index: 2; 
   }
-
 
 
   .image-bg {
     position: absolute;
     bottom: 0;
     right: 3%;
-    z-index: 0; /* Ensure it is behind the other images */
+    z-index: 0;
     width: 50%;
-    height: auto;
     overflow: hidden;
   }
 
@@ -58,7 +56,7 @@ const HomeSectionTwo = styled.section`
     display: flex;
     flex-direction: column;
     gap: 27px;
-    z-index: 1; /* Ensure it is above the background but below other elements */
+    z-index: 1; 
     
     h1 {
       padding-top: 28px;
