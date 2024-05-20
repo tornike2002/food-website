@@ -15,7 +15,13 @@ export default function HomeOne() {
           height={720}
           className="sectionOneRelative"
         />
-        <Image src={ImgBackground} alt="bg" className="sectionOneAbsolute" width={895} height={320} />
+        <Image
+          src={ImgBackground}
+          alt="bg"
+          className="sectionOneAbsolute"
+          width={895}
+          height={320}
+        />
       </div>
       <div className="SectionOne-wrapper">
         <Image src={Line} alt="Divider" />
@@ -35,7 +41,7 @@ export default function HomeOne() {
 
 const HomeSectionOne = styled.section`
   display: flex;
-    margin: 0 6.5%;
+  margin: 0 6.5%;
   gap: 125px;
   align-items: center;
   font-family: "League Spartan", sans-serif;
@@ -43,12 +49,12 @@ const HomeSectionOne = styled.section`
   .image-container {
     position: relative;
     width: 40%;
-    transform: translateY(-60px)
+    transform: translateY(-60px);
   }
 
   .sectionOneRelative {
     position: relative;
-    z-index: 1; 
+    z-index: 1;
   }
 
   .sectionOneAbsolute {
