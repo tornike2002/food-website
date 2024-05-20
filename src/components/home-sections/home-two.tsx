@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import Image from "next/image";
 import divider from "/public/assets/title-line.svg";
+import homeTwo from "/public/assets/home-side2.png";
+import SideMark from "/public/assets/side-mark.png";
 export default function HomeTwo() {
   return (
     <HomeSectionTwo>
@@ -16,10 +18,20 @@ export default function HomeTwo() {
           <br /> of the farm before your meal.
         </p>
       </div>
+      <div className="image-container">
+        <Image src={homeTwo} alt="home background" />
+      </div>
+      <Image src={SideMark} alt="side Mark" />
     </HomeSectionTwo>
   );
 }
 const HomeSectionTwo = styled.section`
+  display: flex;
+  margin: 0 6.5%;
+  gap: 125px;
+  align-items: center;
+  justify-content: space-evenly;
+  font-family: "League Spartan", sans-serif;
   .sectionTwo-wrapper {
     display: flex;
     flex-direction: column;
