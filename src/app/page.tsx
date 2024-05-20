@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Image from "next/image";
 import Dine from "/public/assets/dine.svg";
 import HomeOne from "@/components/home-sections/home-one";
+import HomeTwo from "@/components/home-sections/home-two";
 export default function Home() {
   return (
     <>
@@ -22,6 +23,7 @@ export default function Home() {
         </div>
       </HomeHeader>
       <HomeOne />
+      <HomeTwo />
     </>
   );
 }
